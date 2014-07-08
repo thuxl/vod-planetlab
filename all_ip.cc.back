@@ -1,0 +1,13 @@
+
+//const char* 		   peers_ip[NUM_OF_PEERS] =   {"219.243.208.60", "219.243.208.60", "219.243.208.62", "219.243.208.62"};
+//const int 		   	   peers_port[NUM_OF_PEERS] = {TRANS_CONTROL_PORT, TRANS_CONTROL_PORT2, TRANS_CONTROL_PORT, TRANS_CONTROL_PORT2};
+//const char* 		   peers_ip[NUM_OF_PEERS] =   {"219.243.208.60", "219.243.208.60", "219.243.208.60", "219.243.208.60"};
+//const int 		   	   peers_port[NUM_OF_PEERS] = {TRANS_CONTROL_PORT, TRANS_CONTROL_PORT2, TRANS_CONTROL_PORT3, TRANS_CONTROL_PORT4};
+const char* 		   server_ip  = "166.111.70.16"; //"166.111.70.41";  //"166.111.70.26";
+const int 		   	   server_port = TRANS_CONTROL_PORT;
+//const char* 		   server_ip="127.0.0.1";
+
+const char* 		   peers_ip[NUM_OF_PEERS] =   {"219.243.208.60", "219.243.208.62", "131.247.2.242", "192.41.136.219",
+	"194.79.147.164",
+
+};

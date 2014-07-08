@@ -1,0 +1,19 @@
+#!/bin/bash
+#./vxargs-latest.py -a iplist.txt -o ./tmpresult/ -t 60  ssh -l tsinghua_leixu -i id_rsa {} "killall -9 p_peer000"
+ips=(pl1.6test.edu.cn pl2.6test.edu.cn );
+
+k=0
+final=
+for((i=0;i<2;i++));do
+{
+	ssh -l tsinghua_leixu -i id_rsa ${ips[$i]} "rm p_peer* run node.* peer.*  peermain_000.cc server.* servermain.cc all_ip.cc configure.cc common.h makefile  "
+}&
+done
+wait
+for((i=0;i<2;i++));do
+{
+	scp -i id_rsa run node.* peer.*  peermain_000.cc server.* servermain.cc all_ip.cc configure.cc common.h tsinghua_leixu@${ips[$i]}:~/
+	scp -i id_rsa p_peers/peermakefile$i tsinghua_leixu@${ips[$i]}:~/makefile
+}&
+done
+wait

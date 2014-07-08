@@ -1,0 +1,16 @@
+all: p_server p_peer000 p_peer001 p_peer002 p_peer003 p_peer004 p_peer005 p_peer006 p_peer007 p_peer008 p_peer009 
+p_server:  node.cc server.cc servermain.cc
+	g++  -g -rdynamic -o p_server  node.cc server.cc servermain.cc -lpthread
+p_peer000: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=20 -o p_peer000 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer001: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=21 -o p_peer001 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer002: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=22 -o p_peer002 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer003: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=23 -o p_peer003 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer004: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=24 -o p_peer004 node.cc peer.cc   peermain_000.cc -lpthread
+
+clean:
+	rm -rf p_server p_peer*i=3, active_i=25

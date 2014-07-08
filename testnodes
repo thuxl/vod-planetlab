@@ -1,0 +1,9 @@
+#!/bin/bash
+ips=(pl1.6test.edu.cn pl2.6test.edu.cn );
+
+for((i=0;i<2;i++));do
+{
+	 echo "[$i] ${ips[$i]}"; ssh -l tsinghua_leixu -i id_rsa ${ips[$i]} "hostname;uptime"
+}&
+done
+wait

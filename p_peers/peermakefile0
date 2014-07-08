@@ -1,0 +1,406 @@
+all: p_server p_peer000 p_peer001 p_peer002 p_peer003 p_peer004 p_peer005 p_peer006 p_peer007 p_peer008 p_peer009 p_peer010 p_peer011 p_peer012 p_peer013 p_peer014 p_peer015 p_peer016 p_peer017 p_peer018 p_peer019 p_peer020 p_peer021 p_peer022 p_peer023 p_peer024 p_peer025 p_peer026 p_peer027 p_peer028 p_peer029 p_peer030 p_peer031 p_peer032 p_peer033 p_peer034 p_peer035 p_peer036 p_peer037 p_peer038 p_peer039 p_peer040 p_peer041 p_peer042 p_peer043 p_peer044 p_peer045 p_peer046 p_peer047 p_peer048 p_peer049 p_peer050 p_peer051 p_peer052 p_peer053 p_peer054 p_peer055 p_peer056 p_peer057 p_peer058 p_peer059 p_peer060 p_peer061 p_peer062 p_peer063 p_peer064 p_peer065 p_peer066 p_peer067 p_peer068 p_peer069 p_peer070 p_peer071 p_peer072 p_peer073 p_peer074 p_peer075 p_peer076 p_peer077 p_peer078 p_peer079 p_peer080 p_peer081 p_peer082 p_peer083 p_peer084 p_peer085 p_peer086 p_peer087 p_peer088 p_peer089 p_peer090 p_peer091 p_peer092 p_peer093 p_peer094 p_peer095 p_peer096 p_peer097 p_peer098 p_peer099 p_peer100 p_peer101 p_peer102 p_peer103 p_peer104 p_peer105 p_peer106 p_peer107 p_peer108 p_peer109 p_peer110 p_peer111 p_peer112 p_peer113 p_peer114 p_peer115 p_peer116 p_peer117 p_peer118 p_peer119 p_peer120 p_peer121 p_peer122 p_peer123 p_peer124 p_peer125 p_peer126 p_peer127 p_peer128 p_peer129 p_peer130 p_peer131 p_peer132 p_peer133 p_peer134 p_peer135 p_peer136 p_peer137 p_peer138 p_peer139 p_peer140 p_peer141 p_peer142 p_peer143 p_peer144 p_peer145 p_peer146 p_peer147 p_peer148 p_peer149 p_peer150 p_peer151 p_peer152 p_peer153 p_peer154 p_peer155 p_peer156 p_peer157 p_peer158 p_peer159 p_peer160 p_peer161 p_peer162 p_peer163 p_peer164 p_peer165 p_peer166 p_peer167 p_peer168 p_peer169 p_peer170 p_peer171 p_peer172 p_peer173 p_peer174 p_peer175 p_peer176 p_peer177 p_peer178 p_peer179 p_peer180 p_peer181 p_peer182 p_peer183 p_peer184 p_peer185 p_peer186 p_peer187 p_peer188 p_peer189 p_peer190 p_peer191 p_peer192 p_peer193 p_peer194 p_peer195 p_peer196 p_peer197 p_peer198 p_peer199 
+p_server:  node.cc server.cc servermain.cc
+	g++  -g -rdynamic -o p_server  node.cc server.cc servermain.cc -lpthread
+p_peer000: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=0 -o p_peer000 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer001: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=1 -o p_peer001 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer002: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=2 -o p_peer002 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer003: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=3 -o p_peer003 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer004: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=4 -o p_peer004 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer005: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=5 -o p_peer005 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer006: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=6 -o p_peer006 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer007: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=7 -o p_peer007 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer008: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=8 -o p_peer008 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer009: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=9 -o p_peer009 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer010: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=10 -o p_peer010 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer011: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=11 -o p_peer011 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer012: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=12 -o p_peer012 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer013: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=13 -o p_peer013 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer014: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=14 -o p_peer014 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer015: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=15 -o p_peer015 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer016: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=16 -o p_peer016 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer017: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=17 -o p_peer017 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer018: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=18 -o p_peer018 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer019: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=19 -o p_peer019 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer020: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=20 -o p_peer020 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer021: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=21 -o p_peer021 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer022: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=22 -o p_peer022 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer023: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=23 -o p_peer023 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer024: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=24 -o p_peer024 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer025: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=25 -o p_peer025 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer026: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=26 -o p_peer026 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer027: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=27 -o p_peer027 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer028: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=28 -o p_peer028 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer029: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=29 -o p_peer029 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer030: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=30 -o p_peer030 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer031: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=31 -o p_peer031 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer032: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=32 -o p_peer032 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer033: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=33 -o p_peer033 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer034: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=34 -o p_peer034 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer035: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=35 -o p_peer035 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer036: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=36 -o p_peer036 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer037: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=37 -o p_peer037 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer038: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=38 -o p_peer038 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer039: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=39 -o p_peer039 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer040: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=40 -o p_peer040 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer041: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=41 -o p_peer041 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer042: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=42 -o p_peer042 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer043: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=43 -o p_peer043 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer044: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=44 -o p_peer044 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer045: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=45 -o p_peer045 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer046: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=46 -o p_peer046 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer047: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=47 -o p_peer047 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer048: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=48 -o p_peer048 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer049: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=49 -o p_peer049 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer050: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=50 -o p_peer050 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer051: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=51 -o p_peer051 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer052: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=52 -o p_peer052 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer053: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=53 -o p_peer053 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer054: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=54 -o p_peer054 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer055: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=55 -o p_peer055 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer056: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=56 -o p_peer056 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer057: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=57 -o p_peer057 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer058: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=58 -o p_peer058 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer059: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=59 -o p_peer059 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer060: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=60 -o p_peer060 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer061: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=61 -o p_peer061 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer062: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=62 -o p_peer062 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer063: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=63 -o p_peer063 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer064: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=64 -o p_peer064 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer065: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=65 -o p_peer065 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer066: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=66 -o p_peer066 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer067: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=67 -o p_peer067 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer068: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=68 -o p_peer068 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer069: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=69 -o p_peer069 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer070: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=70 -o p_peer070 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer071: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=71 -o p_peer071 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer072: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=72 -o p_peer072 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer073: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=73 -o p_peer073 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer074: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=74 -o p_peer074 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer075: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=75 -o p_peer075 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer076: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=76 -o p_peer076 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer077: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=77 -o p_peer077 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer078: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=78 -o p_peer078 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer079: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=79 -o p_peer079 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer080: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=80 -o p_peer080 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer081: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=81 -o p_peer081 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer082: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=82 -o p_peer082 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer083: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=83 -o p_peer083 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer084: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=84 -o p_peer084 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer085: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=85 -o p_peer085 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer086: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=86 -o p_peer086 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer087: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=87 -o p_peer087 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer088: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=88 -o p_peer088 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer089: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=89 -o p_peer089 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer090: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=90 -o p_peer090 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer091: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=91 -o p_peer091 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer092: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=92 -o p_peer092 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer093: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=93 -o p_peer093 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer094: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=94 -o p_peer094 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer095: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=95 -o p_peer095 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer096: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=96 -o p_peer096 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer097: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=97 -o p_peer097 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer098: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=98 -o p_peer098 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer099: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=99 -o p_peer099 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer100: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=100 -o p_peer100 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer101: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=101 -o p_peer101 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer102: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=102 -o p_peer102 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer103: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=103 -o p_peer103 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer104: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=104 -o p_peer104 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer105: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=105 -o p_peer105 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer106: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=106 -o p_peer106 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer107: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=107 -o p_peer107 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer108: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=108 -o p_peer108 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer109: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=109 -o p_peer109 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer110: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=110 -o p_peer110 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer111: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=111 -o p_peer111 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer112: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=112 -o p_peer112 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer113: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=113 -o p_peer113 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer114: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=114 -o p_peer114 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer115: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=115 -o p_peer115 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer116: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=116 -o p_peer116 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer117: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=117 -o p_peer117 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer118: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=118 -o p_peer118 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer119: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=119 -o p_peer119 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer120: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=120 -o p_peer120 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer121: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=121 -o p_peer121 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer122: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=122 -o p_peer122 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer123: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=123 -o p_peer123 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer124: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=124 -o p_peer124 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer125: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=125 -o p_peer125 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer126: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=126 -o p_peer126 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer127: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=127 -o p_peer127 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer128: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=128 -o p_peer128 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer129: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=129 -o p_peer129 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer130: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=130 -o p_peer130 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer131: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=131 -o p_peer131 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer132: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=132 -o p_peer132 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer133: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=133 -o p_peer133 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer134: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=134 -o p_peer134 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer135: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=135 -o p_peer135 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer136: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=136 -o p_peer136 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer137: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=137 -o p_peer137 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer138: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=138 -o p_peer138 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer139: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=139 -o p_peer139 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer140: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=140 -o p_peer140 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer141: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=141 -o p_peer141 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer142: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=142 -o p_peer142 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer143: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=143 -o p_peer143 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer144: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=144 -o p_peer144 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer145: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=145 -o p_peer145 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer146: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=146 -o p_peer146 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer147: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=147 -o p_peer147 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer148: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=148 -o p_peer148 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer149: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=149 -o p_peer149 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer150: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=150 -o p_peer150 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer151: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=151 -o p_peer151 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer152: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=152 -o p_peer152 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer153: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=153 -o p_peer153 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer154: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=154 -o p_peer154 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer155: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=155 -o p_peer155 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer156: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=156 -o p_peer156 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer157: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=157 -o p_peer157 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer158: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=158 -o p_peer158 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer159: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=159 -o p_peer159 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer160: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=160 -o p_peer160 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer161: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=161 -o p_peer161 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer162: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=162 -o p_peer162 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer163: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=163 -o p_peer163 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer164: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=164 -o p_peer164 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer165: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=165 -o p_peer165 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer166: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=166 -o p_peer166 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer167: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=167 -o p_peer167 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer168: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=168 -o p_peer168 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer169: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=169 -o p_peer169 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer170: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=170 -o p_peer170 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer171: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=171 -o p_peer171 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer172: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=172 -o p_peer172 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer173: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=173 -o p_peer173 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer174: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=174 -o p_peer174 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer175: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=175 -o p_peer175 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer176: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=176 -o p_peer176 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer177: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=177 -o p_peer177 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer178: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=178 -o p_peer178 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer179: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=179 -o p_peer179 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer180: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=180 -o p_peer180 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer181: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=181 -o p_peer181 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer182: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=182 -o p_peer182 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer183: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=183 -o p_peer183 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer184: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=184 -o p_peer184 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer185: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=185 -o p_peer185 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer186: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=186 -o p_peer186 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer187: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=187 -o p_peer187 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer188: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=188 -o p_peer188 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer189: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=189 -o p_peer189 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer190: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=190 -o p_peer190 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer191: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=191 -o p_peer191 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer192: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=192 -o p_peer192 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer193: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=193 -o p_peer193 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer194: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=194 -o p_peer194 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer195: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=195 -o p_peer195 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer196: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=196 -o p_peer196 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer197: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=197 -o p_peer197 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer198: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=198 -o p_peer198 node.cc peer.cc   peermain_000.cc -lpthread
+p_peer199: node.cc peer.cc peermain_000.cc
+	g++  -g -rdynamic -D PEER_ID=199 -o p_peer199 node.cc peer.cc   peermain_000.cc -lpthread
+
+clean:
+	rm -rf p_server p_peer*
